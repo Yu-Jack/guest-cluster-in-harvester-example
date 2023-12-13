@@ -15,6 +15,11 @@ module "guest_cluster"  {
 
   source = "./modules/guest_cluster"
 
+  rancher_api_url                 = var.rancher_api_url
+  rancher_access_key              = var.rancher_access_key
+  rancher_secret_key              = var.rancher_secret_key
+
   cluster_name = "local-test"
   rke2_version = "v1.26.10+rke2r2"
+  harvester_cloud_credential_id = rancher2_cloud_credential.harvesterkvm.id
 }
