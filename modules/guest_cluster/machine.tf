@@ -8,7 +8,7 @@ resource "rancher2_machine_config_v2" "harvesterkvm" {
     disk_info = <<EOF
     {
         "disks": [{
-            "imageName": "harvester-public/image-lfjlr",
+            "imageName": "${var.image_name}", 
             "size": 30,
             "bootOrder": 1
         }]
@@ -17,7 +17,7 @@ resource "rancher2_machine_config_v2" "harvesterkvm" {
     network_info = <<EOF
     {
         "interfaces": [{
-            "networkName": "harvester-public/vlan1"
+            "networkName": "${var.network_name}"
         }]
     }
     EOF
