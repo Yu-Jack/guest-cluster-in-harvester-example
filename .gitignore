@@ -3,3 +3,4 @@
 terraform.tfstate*
 
 testing.tfvars
+terraform.tfvars
