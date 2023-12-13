@@ -1,5 +1,5 @@
 resource "rancher2_cloud_credential" "harvesterkvm" {
-  name = "harvesterkvm"
+  name = var.harvester_name
   harvester_credential_config {
     cluster_id         = data.rancher2_cluster_v2.harvesterkvm.cluster_v1_id
     cluster_type       = "imported"

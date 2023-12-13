@@ -1,3 +1,4 @@
 rancher_api_url    = ""
 rancher_access_key = ""
 rancher_secret_key = ""
+harvester_name = "harvesterkvm"

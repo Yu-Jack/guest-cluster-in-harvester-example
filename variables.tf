@@ -13,3 +13,7 @@ variable "rancher_secret_key" {
   description = "Secret key"
 }
 
+variable "harvester_name" {
+  type        = string
+  description = "Harvester name"
+}
