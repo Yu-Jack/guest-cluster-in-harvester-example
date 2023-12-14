@@ -19,7 +19,7 @@ module "guest_cluster" {
   rancher_access_key            = var.rancher_access_key
   rancher_secret_key            = var.rancher_secret_key
   cluster_name                  = "local-test"
-  rke2_version                  = "v1.26.11+rke2r1"
+  rke2_version                  = var.rke2_version
   harvester_cloud_credential_id = rancher2_cloud_credential.harvesterkvm.id
   network_name                  = "harvester-public/vlan1"
   image_name                    = var.image_name

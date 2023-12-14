@@ -22,3 +22,8 @@ variable "image_name" {
   type        = string
   description = "The cloud image node uses"
 }
+
+variable "rke2_version" {
+  type        = string
+  description = "RKE2 version"
+}
