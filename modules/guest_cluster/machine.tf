@@ -3,8 +3,8 @@ resource "rancher2_machine_config_v2" "harvesterkvm" {
   generate_name = "harvesterkvm"
   harvester_config {
     vm_namespace = "default"
-    cpu_count = "1"
-    memory_size = "1"
+    cpu_count = "2"
+    memory_size = "4"
     disk_info = <<EOF
     {
         "disks": [{

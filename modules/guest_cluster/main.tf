@@ -24,7 +24,7 @@ resource "rancher2_cluster_v2" "rancher_guest_cluster" {
       control_plane_role           = false
       etcd_role                    = false
       worker_role                  = true
-      quantity                     = 2
+      quantity                     = 1
       drain_before_delete = true
       machine_config {
         kind = rancher2_machine_config_v2.harvesterkvm.kind

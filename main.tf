@@ -22,5 +22,5 @@ module "guest_cluster" {
   rke2_version                  = "v1.26.11+rke2r1"
   harvester_cloud_credential_id = rancher2_cloud_credential.harvesterkvm.id
   network_name                  = "harvester-public/vlan1"
-  image_name                    = "harvester-public/image-lfjlr"
+  image_name                    = var.image_name
 }

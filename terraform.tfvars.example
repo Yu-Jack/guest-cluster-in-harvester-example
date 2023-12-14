@@ -1,4 +1,5 @@
 rancher_api_url    = ""
 rancher_access_key = ""
 rancher_secret_key = ""
+image_name = "harvester-public/image-z5cht"
 harvester_name = "harvesterkvm"

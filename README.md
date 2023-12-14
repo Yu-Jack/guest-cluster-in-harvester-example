@@ -6,6 +6,17 @@ This repo demos how to create cluster on top of harvester. In other words, you c
 
 More detail about this, please see [Harvester Node Driver](https://docs.harvesterhci.io/v1.2/rancher/node/node-driver/) and [Virtualization on Kubernetes with Harvester](https://ranchermanager.docs.rancher.com/integrations-in-rancher/harvester).
 
+# Bootstrap
+
+1. Have a harvester cluster
+2. Have a rancher cluster
+3. Create access and secret key in rancher GUI, and copy it to `terraform.tfvars`. (use `cp terraform.tfvars.example terraform.tfvars` first)
+4. Upload the cloud image in image tab of harvester cluster (`harvester-public` namespace)
+    For example, `focal-server-cloudimg-amd64.img` in https://cloud-images.ubuntu.com/focal/current/
+5. Create `vlan1` in VM Network tab of harvester cluster
+6. `terraform init` and `terraform apply`
+
+
 # Terraform Documentation
 
 - https://registry.terraform.io/providers/rancher/rancher2/latest
