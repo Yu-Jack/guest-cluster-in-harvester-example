@@ -4,7 +4,7 @@ This repo demos how to create cluster on top of harvester. In other words, you c
 
 ![image](https://github.com/Yu-Jack/guest-cluster-in-harvester-example/assets/6960289/81e6d5d3-b04e-46a4-9ca2-3525d7daedfc)
 
-More detail about this, please see [Harvester Node Driver](https://docs.harvesterhci.io/v1.2/rancher/node/node-driver/).
+More detail about this, please see [Harvester Node Driver](https://docs.harvesterhci.io/v1.2/rancher/node/node-driver/) and [Virtualization on Kubernetes with Harvester](https://ranchermanager.docs.rancher.com/integrations-in-rancher/harvester).
 
 # Import Example
 
