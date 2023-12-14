@@ -6,8 +6,11 @@ This repo demos how to create cluster on top of harvester. In other words, you c
 
 More detail about this, please see [Harvester Node Driver](https://docs.harvesterhci.io/v1.2/rancher/node/node-driver/) and [Virtualization on Kubernetes with Harvester](https://ranchermanager.docs.rancher.com/integrations-in-rancher/harvester).
 
-# Import Example
+# Terraform Documentation
 
+- https://registry.terraform.io/providers/rancher/rancher2/latest
+
+# Import Example
 
 ```sh
 # harvester cloud credential
