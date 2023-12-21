@@ -10,12 +10,12 @@ More detail about this, please see [Harvester Node Driver](https://docs.harveste
 
 1. Have a harvester cluster
 2. Have a rancher cluster
-3. Create access and secret key in rancher GUI, and copy it to `terraform.tfvars`. (use `cp terraform.tfvars.example terraform.tfvars` first)
-4. Upload the cloud image in image tab of harvester cluster (`harvester-public` namespace)
+3. Import harvester cluster
+4. Create access and secret key in rancher GUI, and copy it to `terraform.tfvars`. (use `cp terraform.tfvars.example terraform.tfvars` first)
+5. Upload the cloud image in image tab of harvester cluster (`harvester-public` namespace)
     For example, `focal-server-cloudimg-amd64.img` in https://cloud-images.ubuntu.com/focal/current/
-5. Create `vlan1` in VM Network tab of harvester cluster
-6. `terraform init` and `terraform apply`
-
+6. Create `vlan1` in VM Network tab of harvester cluster
+7. `terraform init` and `terraform apply`
 
 # Terraform Documentation
 

@@ -18,6 +18,11 @@ variable "harvester_name" {
   description = "Harvester name"
 }
 
+variable "harvester_cloud_crenditial_name" {
+  type        = string
+  description = "Harvester cloud crenditial name"
+}
+
 variable "image_name" {
   type        = string
   description = "The cloud image node uses"

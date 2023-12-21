@@ -9,7 +9,7 @@ resource "rancher2_machine_config_v2" "harvesterkvm" {
     {
         "disks": [{
             "imageName": "${var.image_name}", 
-            "size": 10,
+            "size": 40,
             "bootOrder": 1
         }]
     }
