@@ -4,7 +4,7 @@ data "rancher2_cluster_v2" "rancher_cluster" {
 }
 
 data "rancher2_cluster_v2" "harvesterkvm" {
-  name            = "kvm"
+  name            = var.harvester_name
   fleet_namespace = "fleet-default"
 }
 
