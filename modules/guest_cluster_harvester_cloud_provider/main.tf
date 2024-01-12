@@ -1,9 +1,10 @@
-locals {
-  cloud_provider_config_content = file("${path.module}/kvm.config")
+data "local_file" "cloud_provider_config" {
+  filename = "${path.module}/kvm.config"
 }
 
+
 output "cloud_provider_config_content" {
-  value = local.cloud_provider_config_content
+  value = data.local_file.cloud_provider_config.content
 }
 
 resource "rancher2_cluster_v2" "rancher_guest_cluster_harvester_cloud_provider" {
@@ -40,10 +41,10 @@ resource "rancher2_cluster_v2" "rancher_guest_cluster_harvester_cloud_provider" 
     }
     
     machine_selector_config {
-      config = <<EOF
-      cloud-provider-config: "${local.cloud_provider_config_content}"
-      cloud-provider-name: harvester
-      EOF
+      config = yamlencode({
+        cloud-provider-name = "harvester"
+        cloud-provider-config = data.local_file.cloud_provider_config.content
+      })
     }
 
     chart_values = <<EOF

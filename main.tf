@@ -35,7 +35,7 @@ module "guest_cluster_harvester_cloud_provider" {
   rancher_api_url               = var.rancher_api_url
   rancher_access_key            = var.rancher_access_key
   rancher_secret_key            = var.rancher_secret_key
-  cluster_name                  = "test-local-1"
+  cluster_name                  = "test-local-6"
   rke2_version                  = var.rke2_version
   harvester_cloud_credential_id = rancher2_cloud_credential.harvesterkvm.id
   network_name                  = "harvester-public/vlan1"

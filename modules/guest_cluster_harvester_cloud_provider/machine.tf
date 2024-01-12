@@ -33,7 +33,7 @@ resource "rancher2_machine_config_v2" "harvesterkvm" {
     # If you don't need to reinstall, you can remote write_files
     write_files:
       - encoding: b64
-        content: ${base64encode(local.cloud_provider_config_content)}
+        content: ${data.local_file.cloud_provider_config.content_base64}
         owner: root:root
         path: /etc/kubernetes/cloud-config
         permission: '0644'
