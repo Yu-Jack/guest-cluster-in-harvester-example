@@ -21,6 +21,7 @@ There are two different guest cluster you could try
 
 1. default: `terraform apply -target=module.guest_cluster`
 2. harvester-cloud-provider: `terraform apply -target=module.guest_cluster_harvester_cloud_provider`
+    This one should set up the `kvm.config` from `kvm.config.template` first.
 
 # Terraform Documentation
 
