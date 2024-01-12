@@ -5,3 +5,6 @@ terraform.tfstate*
 
 testing.tfvars
 terraform.tfvars
+
+kvm.config
+cloud-init-template

@@ -1,0 +1,20 @@
+# This is your harvester kubeconfig
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: xxx
+    server: https://x.x.x.x:6443
+  name: default
+contexts:
+- context:
+    cluster: default
+    namespace: default # This namespace should be same as guest cluster name space you create in machine.tf
+    user: default
+  name: default
+current-context: default
+kind: Config
+preferences: {}
+users:
+- name: default
+  user:
+    token: x
