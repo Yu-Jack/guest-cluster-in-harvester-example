@@ -17,7 +17,7 @@ More detail about this, please see [Harvester Node Driver](https://docs.harveste
 6. Create `vlan1` in VM Network tab of harvester cluster
 7. `terraform init` and `terraform apply`
 
-There are two different guest cluster you could try
+If you want to use default harvester cloud providee, please use first one. Choose second if you would like to install harvester cloud provider by yourself.
 
 1. default: `terraform apply -target=module.guest_cluster`
 2. harvester-cloud-provider: `terraform apply -target=module.guest_cluster_harvester_cloud_provider`
